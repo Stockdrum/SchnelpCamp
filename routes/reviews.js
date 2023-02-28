@@ -9,7 +9,7 @@ const reviews = require("../controllers/reviews");
 const Campground = require("../models/campground");
 const Review = require("../models/review.js");
 
-router.post("/", validateReview, isLoggedIn, catchAsync(reviews.createReview));
+router.post("/", isLoggedIn, validateReview, catchAsync(reviews.createReview));
 
 router.delete(
   "/:reviewId",
