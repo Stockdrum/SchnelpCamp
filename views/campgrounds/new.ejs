@@ -1,0 +1,85 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+  <h1 class="text-center">New Campground</h1>
+  <div class="col-6 offset-3">
+    <form
+      action="/campgrounds"
+      method="POST"
+      novalidate
+      class="validate1"
+      enctype="multipart/form-data"
+    >
+      <div class="mb-3">
+        <label class="form-labels" for="title">Title</label>
+        <input
+          class="form-control"
+          type="text"
+          id="title"
+          name="campground[title]"
+          required
+        />
+        <div class="valid-feedback">Looks sweet!</div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-labels" for="location">Location</label>
+        <input
+          class="form-control"
+          type="text"
+          id="location"
+          name="campground[location]"
+          required
+        />
+        <div class="valid-feedback">Looks sweet!</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-labels" for="price">Campground Price</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="price-label">$</span>
+          </div>
+          <div class="valid-feedback">Looks sweet!</div>
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="0.00"
+            aria-label="price"
+            aria-describedby="price-label"
+            name="campground[price]"
+            required
+          />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-labels" for="description">Description</label>
+        <textarea
+          class="form-control"
+          type="text"
+          id="location"
+          name="campground[description]"
+          required
+        >
+        </textarea>
+        <div class="valid-feedback">Looks sweet!</div>
+      </div>
+      <div class="mb-3">
+        <div class="mb-5 custom-file">
+          <label for="image" class="form-label">Choose Images</label>
+          <input
+            class="form-control"
+            type="file"
+            id="image"
+            name="image"
+            multiple
+          />
+          <label for="image" class="custom-file-label text-muted"></label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-success">Add Campground</button>
+      </div>
+    </form>
+    <a href="/campgrounds">All Campgrounds</a>
+  </div>
+</div>
