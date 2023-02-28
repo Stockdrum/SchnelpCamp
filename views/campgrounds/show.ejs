@@ -72,9 +72,11 @@
     <h2>Leave a Review</h2>
     <form
       action="/campgrounds/<%=campground._id%>/reviews"
+      novalidate
       class="mb-3 validate1"
       method="POST"
-      novalidate
+      
+      
     >
       <fieldset class="starability-basic">
         <input
