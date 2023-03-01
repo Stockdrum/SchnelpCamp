@@ -29,9 +29,8 @@ router
   .put(
     isLoggedIn,
     isAuthor,
-    validateCampground,
     upload.array("image"),
-
+    validateCampground,
     catchAsync(campgrounds.updateCampgrounds)
   )
   .delete(isLoggedIn, isAuthor, catchAsync(campgrounds.deleteCampgrounds));
