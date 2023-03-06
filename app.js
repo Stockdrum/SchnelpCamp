@@ -52,11 +52,14 @@ const sessionConfig = {
   },
 };
 
+
+
 /////////////App. use external plugins////
 /////////////IE. session , passport
 
 app.use(session(sessionConfig));
 app.use(flash());
+
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -72,6 +75,12 @@ app.use((req, res, next) => {
   res.locals.error = req.flash("error");
   next();
 });
+
+app.get('/favico.ico', (req, res) => {
+  res.sendStatus(404);
+});
+
+app.get('/favicon.ico', (req, res) => res.status(204));
 
 app.get("/fakeuser", async (req, res) => {
   const user = new User({ email: "trev@gmail.com", username: "drumboy" });
