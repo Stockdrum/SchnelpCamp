@@ -28,13 +28,9 @@ const seedDB = async () => {
       title: `${sample(descriptors)} ${sample(places)}`,
       geometry: {
         type: "Point",
-        coordinates: [-133.6363631, 36363.0202]
+        coordinates: [-113.1331, 47.0202]
       },
       images: [
-        {
-          url: "https://res.cloudinary.com/dxhqe1atq/image/upload/v1677501106/YelpCamp/dg5x843zx1gcn9tjopnl.jpg",
-          filename: "YelpCamp/dg5x843zx1gcn9tjopnl",
-        },
         {
           url: "https://res.cloudinary.com/dxhqe1atq/image/upload/v1677501107/YelpCamp/d6majqmmgepyzftuhhaz.jpg",
           filename: "YelpCamp/d6majqmmgepyzftuhhaz",
