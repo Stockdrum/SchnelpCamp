@@ -59,7 +59,7 @@
         action="/campgrounds/<%=campground._id%>?_method=DELETE"
         method="POST"
         >
-         <button class="btn btn-danger">Delete Review</button>
+         <button class="btn btn-danger">Delete</button>
         </form>
       </div>
       <% } %>
@@ -76,7 +76,6 @@
       action="/campgrounds/<%=campground._id%>/reviews"
       class="mb-3 validate1"
       method="POST"
-      enctype="multipart/form-data"
       novalidate
       
     >
