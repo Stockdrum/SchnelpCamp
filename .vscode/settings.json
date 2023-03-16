@@ -1,0 +1,38 @@
+{
+	"editor.fontSize": 18,
+	"security.workspace.trust.untrustedFiles": "open",
+	"bracketPairColorizer.depreciation-notice": false,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.colorTheme": "Dracula",
+	"explorer.confirmDelete": false,
+	"editor.defaultFormatter": null,
+	"editor.wordWrap": "on",
+	"todohighlight.isCaseSensitive": true,
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"vue-html": "html",
+		"vue": "html"
+	},
+	"todohighlight.keywords": [
+		{
+			"text": "BUG",
+			"color": "#333",
+			"backgroundColor": "#f94144"
+		},
+		{
+			"text": "FIXME",
+			"color": "#333",
+			"backgroundColor": "#ffb703"
+		}
+	],
+	"explorer.confirmDragAndDrop": false,
+	"editor.fontLigatures": false,
+	"editor.formatOnSave": true,
+	"git.autofetch": true,
+	"git.enableSmartCommit": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"prettier.arrowParens": "avoid",
+	"workbench.settings.editor": "ui"
+}

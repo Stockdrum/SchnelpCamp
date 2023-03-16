@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://scontent-fra5-2.xx.fbcdn.net/v/t31.18172-8/10317699_812773778746669_1591844940656593793_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEyPAvm8F0RoXqRBDkocaQNhaQc9UCRht2FpBz1QJGG3WyrURl39k8YB1QrQQxDda4&_nc_ohc=snOUDcR2df4AX9gIPAB&_nc_ht=scontent-fra5-2.xx&oh=00_AfBG6r1nqQA8qlsLz3rImDuIF1QxNF2Om_lIFUFe1X4_ww&oe=643013CA");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 5rem rgba(0,0,0,0.5)
+    
+}
+
+
+
+.cover-container{
+max-width: 60vw;
+
+}
+
+.nav-link{
+    padding: .25rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    margin-left: 1rem;
+    border-bottom: .25rem solid transparent
+}
+.nav-link:hover{
+    color:rgba(255,255,255,.5);
+    border-bottom-color: rgba(255,255,255,.5);
+}
+
+.nav-link:active{
+    color: white;
+    border-bottom-color: rgba(255,255,255,.5);
+}
+
+.btn-secondary,.btn-secondary:hover{
+    color: #333;
+    text-shadow: none;
+}
